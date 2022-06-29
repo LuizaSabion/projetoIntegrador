@@ -52,14 +52,9 @@
     <form action="cadastro_agenda.php" method="post" enctype='multipart/form-data'>
         <table align="center">
             <tr>
-                <th colspan="2">Cadastro</th>
+                <th colspan="2">Cadastro de Usuarios</th>
             </tr>
-            <tr>
-                <td>
-                    <p>Nome:</p>
-                </td>
-                <td><input type="text" name="nome"></td>
-            </tr>
+            
             
             <tr>
                 <td colspan="2">
@@ -67,23 +62,38 @@
                 </td>
             </tr>
             <tr>
+                <th colspan="2">Dados pessoais</th>
+            </tr>
+            <tr>
+                <td>
+                    <p>Nome:</p>
+                </td>
+                <td><input type="text" name="nome" size="100"></td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Data de Nascimento:</p>
+                </td>
+                <td><input type="date" name="data"></td>
+            </tr>
+            <tr>
                 <td>
                     <p>CPF:</p>
                 </td>
-                <td><input type="text" name="cpf_cliente"></td>
+                <td><input type="text" name="cpf_cliente" size="14"></td>
             </tr>
             <tr>
                 <td>
                     <p>Telefone ou Celular:</p>
                 </td>
-                <td><input type="text" name="telefone"></td>
+                <td><input type="tel" name="telefone" size="15"></td>
             </tr>
             
             <tr>
                 <td>
                     <p>Email:</p>
                 </td>
-                <td><input type="text" name="email"></td>
+                <td><input type="text" name="email" size="100"></td>
             </tr>
             <tr>
                 <td colspan="2">
@@ -91,9 +101,13 @@
                 </td>
             </tr>
             <tr>
+                <th colspan="2">Endereço</th>
+            </tr>
+            <tr>
                 
                 <td>
-                    <p>Estados:</p>
+                    <p>Estado:
+                    </p>
                 </td>
                 <td>
                     <select name="estado" id="estado" onchange="habilitar()">
@@ -130,27 +144,43 @@
             </tr>
             <tr>
                 <td>
-                    <p>Cidade:</p>
+                    <p>CEP:</p>
                 </td>
-                <td><input type="text" name="cidade" id="cidade" disabled onchange="habilitar2()"></td>
+                <td><input type="text" name="cep" id="cep" ></td>
             </tr>
             <tr>
                 <td>
-                    <p>Endereço:</p>
+                    <p>Cidade:</p>
                 </td>
-                <td><input type="text" name="endereco" id="endereco" disabled></td>
+                <td><input type="text" name="cidade" id="cidade" ></td>
             </tr>
+            
             <tr>
                 <td>
                     <p>Bairro:</p>
                 </td>
-                <td><input type="text" name="bairro" id="bairro" disabled></td>
+                <td><input type="text" name="bairro" id="bairro" ></td>
             </tr>
+
+            <tr>
+                <td>
+                    <p>Rua:</p>
+                </td>
+                <td><input type="text" name="rua" id="rua" ></td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Número:</p>
+                </td>
+                <td><input type="text" name="numero" id="numero" size="4"></td>
+            </tr>
+           
             <tr class="form-item">
+                
                 <td><input type="file" id="foto" name="foto" accept="image/*" /></td>
             <tr class="form-item">
                 <tr>
-                    <td colspan="2"><br><input type="submit" value="Enviar"></td>
+                    <td colspan="2"><br><input type="submit" value="CADASTRAR"></td>
                 </tr>
                 <a href='index.php'>Voltar</a>
             </div>
